@@ -1,1 +1,235 @@
-New version created
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Lab</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#111827;
+color:white;
+}
+
+nav h1{
+font-size:24px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+nav ul li a:hover{
+color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background: linear-gradient(135deg,#2563eb,#9333ea);
+color:white;
+padding:20px;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.hero button{
+padding:15px 30px;
+border:none;
+background:white;
+color:#2563eb;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#111827;
+color:white;
+}
+
+/* FEATURES */
+
+.features{
+padding:80px 60px;
+text-align:center;
+}
+
+.features h2{
+font-size:36px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#2563eb;
+}
+
+/* ABOUT */
+
+.about{
+background:#111827;
+color:white;
+padding:80px 60px;
+text-align:center;
+}
+
+.about h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+color:#aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>DevOps Lab 🚀</h1>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+
+<section class="hero">
+
+<div>
+<h2>Welcome to My DevOps Server</h2>
+<p>Deployed using NGINX on Ubuntu 🚀</p>
+
+<button onclick="alert('Your NGINX server is working perfectly!')">
+Test Server
+</button>
+</div>
+
+</section>
+
+
+<section class="features">
+
+<h2>DevOps Capabilities</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>⚙️ CI/CD</h3>
+<p>Automated pipelines for faster and reliable deployments.</p>
+</div>
+
+<div class="card">
+<h3>☁️ Cloud</h3>
+<p>Deploy scalable infrastructure on AWS, Azure or GCP.</p>
+</div>
+
+<div class="card">
+<h3>🐳 Containers</h3>
+<p>Package applications using Docker and run anywhere.</p>
+</div>
+
+<div class="card">
+<h3>📊 Monitoring</h3>
+<p>Monitor apps using Prometheus and Grafana.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="about">
+
+<h2>About This Server</h2>
+
+<p>
+This website is hosted on an Ubuntu virtual machine running NGINX.
+It demonstrates a basic DevOps deployment workflow.
+</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 DevOps Lab | Powered by NGINX</p>
+
+</footer>
+
+
+</body>
+</html>
